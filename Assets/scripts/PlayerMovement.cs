@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
         myRigidbody.velocity = playerVelocity;
 
         bool playerHasHorizontalSpeed = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon;
-        myAnimator.SetBool("FBX AM Pixel Character - Running", playerHasHorizontalSpeed);
+        myAnimator.SetBool("Base Movement", playerHasHorizontalSpeed);
 
     }
 }

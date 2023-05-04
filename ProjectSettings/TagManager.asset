@@ -42,18 +42,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Player
-    uniqueID: 1716407893
-    locked: 0
-  - name: Object
-    uniqueID: 3922161459
+  - name: Background
+    uniqueID: 1114001581
     locked: 0
   - name: Hazard
     uniqueID: 1960677499
     locked: 0
+  - name: Object
+    uniqueID: 3922161459
+    locked: 0
   - name: Platform
     uniqueID: 4048556597
     locked: 0
-  - name: Background
-    uniqueID: 1114001581
+  - name: Player
+    uniqueID: 1716407893
     locked: 0
