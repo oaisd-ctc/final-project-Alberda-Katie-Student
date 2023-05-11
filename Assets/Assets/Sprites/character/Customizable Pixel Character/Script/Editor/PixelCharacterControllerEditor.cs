@@ -5,10 +5,10 @@ using UnityEditor;
 
 namespace Cainos.CustomizablePixelCharacter
 {
-    [CustomEditor(typeof(PixelCharacterController))]
+    [CustomEditor(typeof(PlayerController))]
     public class CharacterControllerEditor : Editor
     {
-        private PixelCharacterController instance;
+        private PlayerController instance;
 
         private SerializedProperty defaultMovement;
         private SerializedProperty leftKey;
@@ -44,7 +44,7 @@ namespace Cainos.CustomizablePixelCharacter
 
         private void OnEnable()
         {
-            instance = target as PixelCharacterController;
+            instance = target as PlayerController;
 
             defaultMovement = serializedObject.FindProperty("defaultMovement");
             leftKey = serializedObject.FindProperty("leftKey");

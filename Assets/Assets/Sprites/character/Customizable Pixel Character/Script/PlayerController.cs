@@ -1,11 +1,11 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 namespace Cainos.CustomizablePixelCharacter
 {
-    public class PixelCharacterController : MonoBehaviour
+    public class PlayerController : MonoBehaviour
     {
         const float GROUND_CHECK_RADIUS = 0.1f;                 // radius of the overlap circle to determine if the character is on ground
 

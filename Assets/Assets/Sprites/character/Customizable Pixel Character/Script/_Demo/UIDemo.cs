@@ -140,7 +140,7 @@ namespace Cainos.CustomizablePixelCharacter
 
         public void OnKillRevive()
         {
-            var cc = character.GetComponent<PixelCharacterController>();
+            var cc = character.GetComponent<PlayerController>();
             cc.IsDead = !cc.IsDead;
 
             if (cc.IsDead == true) selectorWeapon.Index = 0;
