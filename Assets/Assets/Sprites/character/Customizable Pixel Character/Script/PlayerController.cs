@@ -19,6 +19,8 @@ namespace Cainos.CustomizablePixelCharacter
 
         public KeyCode attackKey = KeyCode.Mouse0;
 
+        CapsuleCollider2D myBodyCollider;
+
         public float walkSpeedMax = 2.5f;                       // max walk speed, ideally should be half of runSpeedMax
         public float walkAcc = 10.0f;                           // walking acceleration
 
@@ -77,6 +79,7 @@ namespace Cainos.CustomizablePixelCharacter
         {
             posBot = collider2d.offset - new Vector2 ( 0.0f , collider2d.size.y * 0.5f );
             posTop = collider2d.offset + new Vector2( 0.0f, collider2d.size.y * 0.5f );
+            myBodyCollider = GetComponent<CapsuleCollider2D>();
         }
 
         private void Update()
@@ -232,6 +235,13 @@ namespace Cainos.CustomizablePixelCharacter
             Gizmos.color = Color.white;
             Vector2 worldPos = transform.position;
             Gizmos.DrawWireSphere(worldPos + posBot, groundCheckRadius);
+        }
+        void dead()
+        {
+            if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Hazard")))
+            {
+                isDead = true;
+            }
         }
 
     }

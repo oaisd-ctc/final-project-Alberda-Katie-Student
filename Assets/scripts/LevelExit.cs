@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 
 public class LevelExit : MonoBehaviour
 {
@@ -20,6 +22,7 @@ public class LevelExit : MonoBehaviour
         SceneManager.LoadScene(currectSceneIndex +1);
 
     }
+	
 
 
 }

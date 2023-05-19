@@ -8,7 +8,9 @@ public class CoinPickup : MonoBehaviour
     {
         if(other.tag == "Player")
         {
+            GetComponent<AudioSource>().Play();
             Destroy(gameObject);
+             
         }
     }
 }
