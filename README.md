@@ -21,3 +21,8 @@ At this point you can either move your entire Unity project to the cloned repo, 
 
 # IMPORTANT NOTE
 **Your Unity project _must be on the same folder level as the `.gitignore` and `.gitattributes` files_. Failing to do so will cause unintended tracking and will more than likely attempt to commit _all_ of your changes since the `.gitignore` file will not be obeyed.**
+
+# HOW TO PLAY
+Move left and right with A and D, crouch with S. Get through the obstacles and you win. 
+# CREDITS
+
