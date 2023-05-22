@@ -25,4 +25,11 @@ At this point you can either move your entire Unity project to the cloned repo, 
 # HOW TO PLAY
 Move left and right with A and D, crouch with S. Get through the obstacles and you win. 
 # CREDITS
+1. Customizable Pixel Character
+  - https://assetstore.unity.com/packages/2d/characters/customizable-pixel-character-177945
+2. Pixel Platform Tilemap 1
+  - https://assetstore.unity.com/packages/2d/environments/2d-pixel-platform-tileset-pack-1-221006
+3. 2D Platformer Tileset
+  - https://assetstore.unity.com/packages/2d/environments/2d-platformer-tileset-173155
+
 
